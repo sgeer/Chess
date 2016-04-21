@@ -1,0 +1,52 @@
+#board{
+    width: 512px;
+    height: 512px;
+    border: 1px solid black;
+    margin: 20px auto;
+    display: none;
+}
+.white{
+    background:url('w.png');
+    width:64px;
+    height:64px;
+    float:left;
+    padding:0px;
+    margin:0px;
+    outline: 2px solid #000
+}
+.black{
+    background:url('b.png');
+    width:64px;
+    height:64px;
+    float:left;
+    padding:0px;
+    margin:0px;
+    outline: 2px solid #000
+}
+#screen
+{
+	width: center;
+}
+#buttonDraw, #buttonDotting
+{
+    width:200px;
+    margin: 20px auto;
+}
+#choiceFigure
+{
+   width: 260px;
+    height: 65px;
+    border: 1px solid green;
+    margin: 20px auto;
+    display: none;
+
+}
+#findGame
+{
+    width: 100px;
+    height: 25px;
+    border: 1px solid green;
+    margin: 20px auto;
+    display: block;
+} 
+
