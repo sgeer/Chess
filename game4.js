@@ -403,11 +403,8 @@
 		var row = parseInt (this.attributes['data-row'].value);
 		var column = parseInt (this.attributes['data-column'].value);
 
-		console.log('-------------------------');
-
 		if (takenFigColumn != undefined && takenFigRow != undefined)	 //если фигура была взята
-		{				
-			console.log('Фигура была взята ' + Matrix[row][column].type + " " + row + ";" + column);												
+		{														
 			takenFigure = Matrix[takenFigRow][takenFigColumn];
 			Matrix[takenFigRow][takenFigColumn].DeleteCheckMove();
 
@@ -476,10 +473,7 @@
 			if (Matrix[row][column] === 0)	
 				RemoveCurrentFigure();
 			else if (nowTurn === Matrix[row][column].color)		// если хотим взять нужный цвет
-			{
-				console.log('фигуру взяли ');
 				SetCurrentFigure(row, column);
-			}
 			else
 				alert("СЕЙЧАС ХОДЯТ " + nowTurn);
 		}
